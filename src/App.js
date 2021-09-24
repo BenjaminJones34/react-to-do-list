@@ -20,12 +20,12 @@ const App = () => {
 
   return (
     <div>
-      <div>
-        <input type="text" name="item" value={list.value} onChange={handleChange} onKeyPress={addToList} />
-        <button onClick={addToList}>Add Task</button>
+      <div className="inputs">
+        <input className="input" placeholder="Add task..." type="text" name="item" value={list.value} onChange={handleChange} onKeyPress={addToList} />
+        <button className="submit" onClick={addToList}>Add Task</button>
       </div>
       <div>
-        <ul>
+        <ul className="list">
           <ToDoList list={list} setList={setList}/>
         </ul>
       </div>

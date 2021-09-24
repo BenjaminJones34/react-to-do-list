@@ -1,5 +1,5 @@
 export const ToDoList = (props) => {
-    let listReturn = props.list.arr.map((item, index) => <li id={item} onClick={() => {removeItem(index, props.list, props.setList)}}>{item}</li>)
+    let listReturn = props.list.arr.map((item, index) => <li className="items" id={item} onClick={() => {removeItem(index, props.list, props.setList)}}>{item}</li>)
     return listReturn
   }
 
