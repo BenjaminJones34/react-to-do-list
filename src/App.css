@@ -13,6 +13,7 @@ html {
 .input {
     width: 200px;
     height: 50px;
+    font-size: 1.2em;
 }
 
 .submit {
@@ -23,11 +24,15 @@ html {
     margin: 10px;
 }
 
+.submit:hover {
+    cursor: pointer
+}
+
 .list {
     font-size: 30px;
     color: orange;
     text-shadow: 1px 1px 2px black;
-    border-left: 5px solid red;
+    /* border-left: 5px solid red; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -39,8 +44,12 @@ html {
     width: fit-content;
     padding-bottom: 5px;
     max-width: 100px;
+    border-left: 5px solid red;
+    padding-left: 10px;
 }
 
 .items:hover {
     text-shadow: 1px 1px 3px gold;
+    border-left: 5px solid green;
+    cursor: default;
 }
