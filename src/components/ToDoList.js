@@ -5,7 +5,7 @@ export const ToDoList = (props) => {
 
 const removeItem = (index, list, setList) => {
     let newArray = list.arr
-    let temp = newArray.splice(index, 1)
+    newArray.splice(index, 1)
     return setList({arr: newArray, value: list.value})
 }
 
